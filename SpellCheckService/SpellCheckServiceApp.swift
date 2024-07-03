@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct SpellCheckServiceApp: App {
+struct SpellCheckService: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        Settings { }
     }
 }
